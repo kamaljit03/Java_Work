@@ -1,24 +1,21 @@
 import java.util.Scanner;
-class Operation{
-    
-    public void upper(String s){
-        System.out.println("Uppercase is: " + s.toUpperCase());
-    }
-    public void lower(String s){
-        System.out.println("Lowercase is: " + s.toLowerCase());
-    }
-}
 
 class Main{
     public static void main(String[] args){
         
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Yout String: ");
-        String str = sc.nextLine();
+        String str1 = sc.nextLine();
         
-        Operation op = new Operation();
-        op.upper(str);
-        op.lower(str);
+        String str2 = str1.toUpperCase();
+       
+        if(str1 == str2){
+            System.out.println("Lowercase is: " + str1.toLowerCase());
+        }
+        else{
+            System.out.println("Uppercase is: " + str2);
+        }
+       
         
     }
 }
